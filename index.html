@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Mèmes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Générateur de Mèmes</h1>
+
+        <!-- Téléchargement d'image -->
+        <input type="file" id="imageUpload" accept="image/*">
+
+        <!-- Zone de texte pour ajouter du texte -->
+        <input type="text" id="memeText" placeholder="Ajoutez votre texte ici...">
+
+        <!-- Conteneur pour l'aperçu du mème et le bouton Télécharger -->
+        <div class="meme-container">
+            <div class="meme-preview" id="memePreview">
+                <img id="memeImage" src="" alt="Aperçu du mème">
+                <p id="textOverlay">Votre texte ici</p>
+            </div>
+            <button id="downloadButton">Télécharger le Mème</button>
+        </div>
+
+        <!-- Boutons de partage -->
+        <div class="social-buttons">
+            <button id="whatsappShareButton" class="whatsapp">Partager sur WhatsApp</button>
+            <button id="twitterShareButton" class="twitter">Partager sur Twitter</button>
+            <button id="facebookShareButton" class="facebook">Partager sur Facebook</button>
+        </div>
+
+        <!-- Galerie des mèmes précédents -->
+        <h2>Galerie</h2>
+        <div id="gallery"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f2f5;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border: 3px solid #007bff; /* Bordure colorée */
+}
+
+/* Input et Boutons */
+input[type="file"],
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #007bff; /* Bordure colorée */
+    border-radius: 5px;
+}
+
+/* Conteneur du mème */
+.meme-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 123, 255, 0.3);  
+}
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #b4041a;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Aperçu du mème avec cadre coloré */
+.meme-preview {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: 3px solid #28a745; /* Bordure verte */
+    border-radius: 12px;
+    background: linear-gradient(135deg, #d4fc79, #96e6a1); /* Dégradé de fond */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.meme-preview img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+}
+
+#textOverlay {
+    position: absolute;
+    bottom: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Bouton Télécharger */
+#downloadButton {
+    background-color: #4CAF50;
+    padding: 12px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    height: fit-content;
+}
+
+#downloadButton:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Boutons Réseaux Sociaux */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-buttons button {
+    padding: 12px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.social-buttons .whatsapp {
+    background-color: #25D366;
+}
+
+.social-buttons .whatsapp:hover {
+    background-color: #1da851;
+}
+
+.social-buttons .twitter {
+    background-color: #1DA1F2;
+}
+
+.social-buttons .twitter:hover {
+    background-color: #0d8bdc;
+}
+
+.social-buttons .facebook {
+    background-color: #3b5998;
+}
+
+.social-buttons .facebook:hover {
+    background-color: #2d4373;
+}
+
+/* 🎨 Style pour la Galerie */
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 15px;
+    background: linear-gradient(135deg, #f3f4f6, #e0e7ff); /* Dégradé doux */
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #4CAF50;
+}
+
+/* 📌 Style pour chaque mème dans la galerie */
+.gallery-item {
+    width: 120px; /* Taille ajustée */
+    height: 120px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 📷 Les images de la galerie */
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* 🔍 Effet au survol */
+.gallery-item:hover {
+    transform: scale(1.08);
+}
