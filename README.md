@@ -15,5 +15,5 @@ Vous avez plusieurs options pour utiliser ou explorer ce projet :
 3. **Télécharger les fichiers manuellement**
 Si vous n'avez pas Git installé, vous pouvez simplement télécharger les fichiers index.html, style.css et script.js pour explorer le code et exécuter le projet localement.
 
-#### !information
+#### ⚠️ Information
 Le partage sur les réseaux sociaux ne fonctionne pas, car les plateformes comme Facebook, Twitter et WhatsApp ne prennent pas en charge les images locales ou en base64. Pour que cela fonctionne, l'image doit être hébergée en ligne sur un serveur avant d'être partagée.
